@@ -6,6 +6,9 @@ from pages import views
 
 urlpatterns = [
     path('',views.index),
+   
+    path('form/',views.form),
+   
 ]
 
 

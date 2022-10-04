@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>form</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="first_name" placeholder="first name">
+        <br>
+        <input type="text" name="last_name"  placeholder="last name">
+        <br>
+        <input type="text" name="Dept_name" placeholder="dept name">
+        <br>
+       <input type="date" name="joining_date" placeholder="joining date">
+        <br>
+         <input type="number" name="Price" placeholder="price" >
+        <br>
+        <input type="file" accept="image/*" name="image" placeholder="image">
+        <br>
+         <input type="submit" value="Send">
+         <br>
+         
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+</body>
+</html>

@@ -20,9 +20,10 @@ class Product(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     Dept_name = models.CharField(max_length=20)
-    joining_date = models.DateField()
-    Price = models.IntegerField()
-    #image = models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=100)
+    joining_date = models.DateField(auto_now_add=True)
+    Price = models.IntegerField(default=0)
+    image = models.ImageField(upload_to='None')
+   
    
     
 
